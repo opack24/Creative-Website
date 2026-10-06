@@ -125,8 +125,8 @@ button { font: inherit; }
   .mobile-panel { display: grid; position: fixed; z-index: 5; top: 98px; right: 0; left: 0; padding: 22px var(--gutter); gap: 18px; background: var(--paper); border-bottom: 1px solid var(--line); font-size: 13px; }
   .hero { grid-template-columns: 1fr; padding-top: 55px; padding-bottom: 43px; gap: 32px; }
   .hero h1 { font-size: clamp(56px, 15vw, 90px); }
-  .hero-visual { height: min(112vw, 480px); grid-row: 1; }
-  .hero-copy { grid-row: 2; }
+  .hero-visual { height: min(112vw, 480px); grid-row: 2; }
+  .hero-copy { grid-row: 1; }
   .hero-proof { margin-top: 32px; }
   .product-section { padding-top: 68px; padding-bottom: 74px; }
   .product-grid, .market-layout { grid-template-columns: 1fr; gap: 20px; }
