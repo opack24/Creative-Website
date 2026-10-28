@@ -1,100 +1,43 @@
 import { useState } from 'react';
 
-function GoogleMark() {
-  return <span className="google-mark" aria-label="Google"><i>G</i>oogle</span>;
+function FoldMateArt() {
+  return <svg className="hoodie-art machine-art" viewBox="0 0 600 650" role="img" aria-label="Concept illustration of the FoldMate automatic clothes-folding machine">
+    <defs><linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#fafbf7"/><stop offset="1" stopColor="#c9ccc4"/></linearGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stopColor="#343a35"/><stop offset="1" stopColor="#151917"/></linearGradient><filter id="shadow" x="-40%" y="-50%" width="180%" height="220%"><feGaussianBlur stdDeviation="18"/></filter></defs>
+    <ellipse cx="300" cy="592" rx="170" ry="23" fill="#333" opacity=".2" filter="url(#shadow)"/><path d="M166 99q0-25 26-25h216q26 0 26 25v453H166z" fill="url(#shell)" stroke="#aeb2a9" strokeWidth="3"/><path d="M181 115q0-16 16-16h206q16 0 16 16v422H181z" fill="#f2f3ee" stroke="#d2d5cd" strokeWidth="2"/><path d="M181 115q0-16 16-16h206q16 0 16 16v29H181z" fill="#daddd5"/><path d="M215 123h165" stroke="#596159" strokeWidth="6" strokeLinecap="round"/><text x="207" y="178" fontFamily="Arial" fontSize="13" fontWeight="700" letterSpacing="2" fill="#697267">FOLDMATE</text><rect x="348" y="155" width="43" height="29" rx="7" fill="#282e29"/><circle cx="369" cy="170" r="4" fill="#d7ef54"/><rect x="204" y="201" width="192" height="192" rx="8" fill="url(#panel)" stroke="#4c554e" strokeWidth="3"/><path d="M218 220h164v144H218z" fill="#232a25" stroke="#788074" strokeWidth="2"/><path d="M300 224v139M220 278h160" stroke="#8e988c" strokeWidth="2" opacity=".42"/><path d="m254 245 17-7 17 7 12 13 12-13 17-7 17 7 15 19-14 9-11-7v59q-37 11-74 0v-59l-11 7-14-9z" fill="#eceee8" stroke="#b3baaf" strokeWidth="2"/><path d="M288 246q10 15 25 0m-13 14v68m-37-31h74" fill="none" stroke="#c1c7bc" strokeWidth="2"/><path d="M220 378h160" stroke="#d7ef54" strokeWidth="3"/><rect x="204" y="417" width="192" height="90" rx="5" fill="#dfe2da" stroke="#b7bbb2" strokeWidth="2"/><path d="M220 475q36-12 72 0t72 0v14q-36 12-72 0t-72 0zM220 452q36-12 72 0t72 0v14q-36 12-72 0t-72 0zM220 429q36-12 72 0t72 0v14q-36 12-72 0t-72 0z" fill="#f8f9f4" stroke="#b8bdb3" strokeWidth="2"/><path d="M175 552h250v18q0 11-12 11H187q-12 0-12-11z" fill="#b9bdb4"/><path d="M190 582v9m220-9v9" stroke="#747a70" strokeWidth="5" strokeLinecap="round"/>
+  </svg>;
 }
 
-function HoodieArt() {
-  return (
-    <svg className="hoodie-art" viewBox="0 0 600 650" role="img" aria-label="Illustration of a redesigned black pullover hoodie with short drawcords">
-      <defs>
-        <linearGradient id="fabric" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#333536"/><stop offset=".52" stopColor="#17191a"/><stop offset="1" stopColor="#090a0b"/></linearGradient>
-        <linearGradient id="sleeve" x1="0" y1="0" x2="0.9" y2="1"><stop stopColor="#27292a"/><stop offset="1" stopColor="#101112"/></linearGradient>
-        <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="17"/></filter>
-      </defs>
-      <ellipse cx="302" cy="590" rx="194" ry="23" fill="#000" opacity=".19" filter="url(#shadow)"/>
-      <path d="M216 154 151 177 86 253l53 46 38-37-19 246q143 27 288 0l-19-246 38 37 53-46-65-76-64-23-41 27h-91z" fill="url(#fabric)" stroke="#454748" strokeWidth="2"/>
-      <path d="m151 177-65 76 53 46 55-60-18-52zM449 177l65 76-53 46-55-60 18-52z" fill="url(#sleeve)" stroke="#414344" strokeWidth="2"/>
-      <path d="m191 508-6 21q31 13 57 0l-2-18M360 511l-2 18q28 13 57 0l-5-21" fill="#111314" stroke="#343738" strokeWidth="2"/>
-      <path d="M216 154c4-67 37-111 84-111 48 0 81 44 85 111l-47 27H261z" fill="url(#fabric)" stroke="#47494a" strokeWidth="2"/>
-      <path d="M262 164q38 24 76 0" fill="none" stroke="#56595a" strokeWidth="2"/>
-      <path d="M268 177v52m64-52v52" fill="none" stroke="#a7a29a" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M268 227v8m64-8v8" stroke="#a7a29a" strokeWidth="5" strokeLinecap="round"/>
-      <path d="M230 404q70 10 140 0v53q-70 13-140 0z" fill="#101213" stroke="#303334" strokeWidth="2"/>
-      <path d="M197 245 185 479M403 245l12 234" fill="none" stroke="#343637" strokeWidth="2" opacity=".7"/>
-      <text x="337" y="276" fontFamily="Arial,sans-serif" fontSize="17" fontWeight="600" letterSpacing="-1"><tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan></text>
-      <path d="M148 300q-14 6-22-7M452 300q14 6 22-7" fill="none" stroke="#66696a" strokeWidth="2" opacity=".5"/>
-    </svg>
-  );
-}
-
-const segments = [
-  ['Geographic', 'College towns and urban tech hubs across the United States'],
-  ['Demographic', 'Students and early-career adults, ages 18–28'],
-  ['Psychographic', 'Design-aware, sustainability-minded, and drawn to understated tech culture'],
-  ['Benefits', 'A comfortable recycled layer with a subtle connection to Google'],
-  ['Behavioral', 'Wears a hoodie for campus, commuting, and co-working; shops online for versatile staples'],
+const segments=[
+  ['Geographic','U.S. households; start by testing with families nationwide.'],
+  ['Demographic','Busy parents, caregivers, and families with frequent laundry.'],
+  ['Psychographic','Time-pressed people who value convenience and dislike repetitive chores.'],
+  ['Benefits','Less time and effort folding; a calmer path from clean clothes to put-away.'],
+  ['Behavioral','Laundry runs often; clothes pile up, get hung, sorted into bins, or left unfolded.'],
 ];
 
-export default function App() {
-  const [open, setOpen] = useState(false);
-  return (
-    <main>
-      <div className="announcement">A familiar favorite, rethought for every day <span>↗</span></div>
-      <header className="nav wrap">
-        <a className="wordmark" href="#top" aria-label="Google Re:Wear home"><GoogleMark /><span className="divider">/</span><span>RE:WEAR</span></a>
-        <nav><a href="#redesign">The redesign</a><a href="#fit">Why it fits</a><a href="#market">Our customer</a></nav>
-        <a className="nav-cta" href="#product">Meet the hoodie <span>↗</span></a>
-      </header>
+export default function App(){
+  const [open,setOpen]=useState(false);
+  return <main>
+    <div className="announcement">Meet FoldMate — your laundry’s new last step <span>↗</span></div>
+    <header className="nav wrap"><a className="wordmark foldmate-wordmark" href="#top"><span className="foldmate-icon">F</span><span>FOLDMATE</span></a><nav><a href="#how">How it works</a><a href="#research">The insight</a><a href="#customer">Who it’s for</a></nav><a className="nav-cta" href="#product">Explore the concept <span>↗</span></a><button className="mobile-menu" onClick={()=>setOpen(!open)} aria-label="Open navigation">{open?'Close −':'Menu +'}</button></header>
+    {open&&<div className="mobile-panel"><a onClick={()=>setOpen(false)} href="#how">How it works</a><a onClick={()=>setOpen(false)} href="#research">The insight</a><a onClick={()=>setOpen(false)} href="#customer">Who it’s for</a></div>}
 
-      <section className="hero wrap" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span className="dot"/> GOOGLE RECYCLED HOODIE · CONCEPT RELAUNCH</p>
-          <h1>Less merch.<br/><em>More everyday.</em></h1>
-          <p className="lede">A familiar layer, refined. Recycled comfort with a cleaner shape and a quieter kind of Google pride.</p>
-          <div className="hero-actions"><a className="button button-dark" href="#product">Explore the redesign <span>↘</span></a><span className="micro-note">A concept for the next generation of everyday wear</span></div>
-          <div className="hero-proof"><span><b>01</b> Recycled at heart</span><span><b>02</b> Made to wear on repeat</span></div>
-        </div>
-        <div className="hero-visual">
-          <div className="visual-orbit orbit-one"/><div className="visual-orbit orbit-two"/>
-          <div className="product-tag"><span className="tag-dot"/> THE EVERYDAY PULLOVER <span>01 / 03</span></div>
-          <HoodieArt />
-          <div className="swatch-label"><span className="swatch"/> Recycled black <span className="swatch-line"/> Subtle by design</div>
-          <span className="visual-index">GOOGLE · RE:WEAR</span>
-        </div>
-      </section>
+    <section className="hero wrap" id="top"><div className="hero-copy"><p className="eyebrow"><span className="dot"/> HOME CLOTHES-FOLDING MACHINE · VENTURE CONCEPT</p><h1>Less folding.<br/><em>More living.</em></h1><p className="lede">The wash is done. The pile is waiting. FoldMate is a home appliance concept that handles the folding step, giving busy households a little more time back.</p><div className="hero-actions"><a className="button button-dark" href="#product">Meet FoldMate <span>↘</span></a><span className="micro-note">A little less time on the laundry pile.</span></div><div className="hero-proof"><span><b>01</b> For everyday loads</span><span><b>02</b> Designed for home</span></div></div><div className="hero-visual"><div className="visual-orbit orbit-one"/><div className="visual-orbit orbit-two"/><div className="product-tag"><span className="tag-dot"/> FOLDMATE HOME <span>CONCEPT 01</span></div><FoldMateArt/><div className="swatch-label"><span className="swatch"/> Home-sized concept <span className="swatch-line"/> Proposed design</div><span className="visual-index">FOLDMATE · HOME</span></div></section>
 
-      <section className="ticker" aria-label="Product principles"><div>RECYCLED MATERIALS <span>✳</span> QUIETLY ICONIC <span>✳</span> YOUR EVERYDAY UNIFORM <span>✳</span> RECYCLED MATERIALS <span>✳</span> QUIETLY ICONIC <span>✳</span></div></section>
+    <section className="ticker" aria-label="FoldMate promise"><div>TIME BACK FOR YOUR EVENING <span>✳</span> LESS REPETITIVE WORK <span>✳</span> MADE FOR REAL HOMES <span>✳</span> TIME BACK FOR YOUR EVENING <span>✳</span></div></section>
 
-      <section className="product-section wrap" id="product">
-        <div className="section-label">01 / THE PRODUCT</div>
-        <div className="product-grid">
-          <div><p className="eyebrow">THE GOOGLE RECYCLED HOODIE · REIMAGINED</p><h2>Built around<br/>what you <em>actually wear.</em></h2></div>
-          <div className="product-copy"><p>The original has the right idea: a black hoodie made with recycled material and a small Google mark. The relaunch keeps that foundation and makes the design easier to reach for, day after day.</p><a href="#redesign" className="text-link">See what changed <span>↓</span></a></div>
-        </div>
-        <div className="product-card" id="redesign">
-          <div className="product-card-art"><HoodieArt /><span className="concept-stamp">PROPOSED<br/>DESIGN</span></div>
-          <div className="product-card-info"><div className="product-name"><div><span className="eyebrow">GOOGLE RE:WEAR</span><h3>The Recycled Everyday Hoodie</h3></div><strong>$75</strong></div>
-            <p>Same recycled-hoodie idea. A more considered silhouette, designed for the rhythm of a real week.</p>
-            <div className="feature-list"><span><b>01</b> Pullover shape, no front zipper</span><span><b>02</b> Short, tidy drawcords</span><span><b>03</b> Small multicolor chest mark</span></div>
-            <a className="button button-light" href="#fit">Why it belongs in your rotation <span>↗</span></a>
-            <small>Concept redesign for a class marketing project. Recycled material and $75 price are based on the original product listing; fit and trim changes are proposed.</small>
-          </div>
-        </div>
-      </section>
+    <section className="product-section wrap" id="product"><div className="section-label">01 / THE PRODUCT</div><div className="product-grid"><div><p className="eyebrow">INTRODUCING FOLDMATE</p><h2>Clean clothes in.<br/><em>One less chore.</em></h2></div><div className="product-copy"><p>FoldMate is a proposed home machine that identifies and folds common clean clothes. It’s designed for households that do plenty of laundry and would rather spend their time doing something else.</p><a href="#how" className="text-link">See the proposed flow <span>↓</span></a></div></div><div className="product-card" id="how"><div className="product-card-art"><FoldMateArt/><span className="concept-stamp">VENTURE<br/>CONCEPT</span></div><div className="product-card-info"><div className="product-name"><div><span className="eyebrow">FOLDMATE · HOME</span><h3>Automatic Clothes Folder</h3></div><strong>$1,299*</strong></div><p>Designed for everyday clothing, a simple routine, and a finished-clothes tray that keeps the pile moving.</p><div className="feature-list"><span><b>01</b> Proposed clothing recognition</span><span><b>02</b> Folding settings for common items</span><span><b>03</b> Finished-clothes collection tray</span><span><b>04</b> Home-sized form and simple controls</span></div><a className="button button-light" href="#customer">Who FoldMate is for <span>↗</span></a><small>*Preliminary project price, not validated. Product capabilities and footprint are concepts that need prototyping and customer testing.</small></div></div></section>
 
-      <section className="benefits" id="fit"><div className="wrap benefits-inner">
-        <div className="section-label">02 / THE REPOSITIONING</div><div className="benefit-heading"><p className="eyebrow">FOR CAMPUS, COMMUTES & EVERYTHING BETWEEN</p><h2>Your day changes.<br/><em>Your layer keeps up.</em></h2></div>
-        <div className="benefit-cards"><article><span>01 / EASY TO REACH FOR</span><h3>One less decision.</h3><p>A simple black layer works with the pieces you already own—from an early lecture to the last coffee run.</p></article><article><span>02 / QUIETER BRANDING</span><h3>Show your side, subtly.</h3><p>A small Google mark keeps the connection personal, so the hoodie feels like your style—not a walking ad.</p></article><article><span>03 / A BETTER STORY</span><h3>Recycled, re-worn.</h3><p>Lead with the recycled-material story and everyday usefulness, without making sustainability claims the product can’t prove.</p></article></div>
-      </div></section>
+    <section className="benefits"><div className="wrap"><div className="section-label">02 / THE PROMISE</div><div className="benefit-heading"><p className="eyebrow">FOR THE PEOPLE WHO ALWAYS HAVE ANOTHER LOAD</p><h2>Make room for<br/><em>more than laundry.</em></h2></div><div className="benefit-cards"><article><span>01 / TIME BACK</span><h3>Your evening is yours.</h3><p>Turn a recurring folding session into time for family, rest, or whatever the day didn’t leave room for.</p></article><article><span>02 / LESS EFFORT</span><h3>Let repetition go.</h3><p>Reduce the hands-on folding work that keeps clean clothes waiting in baskets and on chairs.</p></article><article><span>03 / BUILT FOR HOME</span><h3>A practical helper.</h3><p>Prioritize simple controls, common clothing, easy feeding, and a footprint households can live with.</p></article></div></div></section>
 
-      <section className="market wrap" id="market"><div className="section-label">03 / WHO IT'S FOR</div><div className="market-layout"><div><p className="eyebrow">A CLEARER CUSTOMER, A CLEARER STORY</p><h2>Meet the<br/><em>everyday optimist.</em></h2><p className="market-intro">A sustainability-minded college student or early-career creative, 18–28, in a US university town or tech hub. They want a comfortable recycled layer with a subtle Google connection—not conspicuous tech merch.</p></div><div className="segment-list">{segments.map(([name, detail], i) => <div className="segment" key={name}><span>0{i + 1}</span><b>{name}</b><p>{detail}</p></div>)}</div></div></section>
+    <section className="market wrap" id="customer"><div className="section-label">03 / WHO IT’S FOR</div><div className="market-layout"><div><p className="eyebrow">A FOCUSED FIRST CUSTOMER</p><h2>Meet the<br/><em>busy laundry house.</em></h2><p className="market-intro">A U.S. household where laundry is frequent, clean clothes build up, and the people doing it have more valuable things to spend their time and energy on. FoldMate’s early customer wants dependable help with a repeated chore, not a perfect-fold novelty.</p></div><div className="segment-list">{segments.map(([n,d],i)=><div className="segment" key={n}><span>0{i+1}</span><b>{n}</b><p>{d}</p></div>)}</div></div></section>
 
-      <section className="diagnosis"><div className="wrap diagnosis-inner"><div className="section-label">THE OPPORTUNITY</div><h2>Good product idea.<br/><em>Room to get the details right.</em></h2><div className="diagnosis-points"><p><b>01 — Design friction</b>The long, contrasting drawstrings can look untidy and pull attention away from the clean black base.</p><p><b>02 — Mixed signals</b>A front zipper gives the piece a standard zip-up look, while the recycled story and small logo don’t yet explain why it deserves a $75 premium.</p><p><b>03 — Repositioning</b>Present it as a thoughtfully redesigned everyday layer for students and young creatives—not just branded company merchandise.</p></div></div></section>
+    <section className="benefits research" id="research"><div className="wrap"><div className="section-label">04 / WHAT THE RESEARCH SAYS</div><div className="benefit-heading"><p className="eyebrow">30 PUBLIC REDDIT OBSERVATIONS · 5 THREADS</p><h2>People want help.<br/><em>They’ll question the machine.</em></h2><p className="research-intro">The sample shows a split: some people are tired of folding; others use quick, low-cost workarounds or don’t see it as a problem.</p></div><div className="sentiment-grid"><div><strong>12</strong><span>Positive</span></div><div><strong>8</strong><span>Mixed</span></div><div><strong>8</strong><span>Negative</span></div><div><strong>2</strong><span>Neutral</span></div></div><p className="sample-note">Sentiment describes each comment’s stance toward folding or a proposed machine, not product ratings. This small convenience sample is not representative.</p><div className="benefit-cards"><article><span>INSIGHT 01</span><h3>Folding feels like work.</h3><p>Some people describe the time and effort as frustrating or tiring.</p></article><article><span>INSIGHT 02</span><h3>Workarounds are easy.</h3><p>Hanging, bins, folding boards, or skipping folds already work for some.</p></article><article><span>INSIGHT 03</span><h3>The machine must earn its space.</h3><p>Price, footprint, easy feeding, accessibility, and reliable results matter.</p></article></div><div className="research-takeaway"><b>What this changes for FoldMate</b><p>Lead with saved time and reduced effort—not perfect folds. Make the experience low-touch, prove the space and price are worthwhile, and test $1,299 directly with households before fixing the price.</p></div></div></section>
 
-      <footer className="footer wrap"><div className="footer-top"><a className="wordmark" href="#top"><GoogleMark /><span className="divider">/</span><span>RE:WEAR</span></a><p>Made for the everyday, again and again.</p><a className="button button-dark" href="#product">Meet your new repeat <span>↑</span></a></div><div className="footer-bottom"><span>CONCEPT RELAUNCH · MARKETING ASSIGNMENT</span><span>RECYCLED IDEA. REFINED FOR REAL LIFE.</span><a href="#top">BACK TO TOP ↑</a></div></footer>
-      <button className="mobile-menu" aria-label="Open navigation" onClick={() => setOpen(!open)}>{open ? 'Close −' : 'Menu +'}</button>
-      {open && <div className="mobile-panel"><a onClick={() => setOpen(false)} href="#redesign">The redesign</a><a onClick={() => setOpen(false)} href="#fit">Why it fits</a><a onClick={() => setOpen(false)} href="#market">Our customer</a></div>}
-    </main>
-  );
+    <section className="market-context"><div className="wrap context-grid"><div><div className="section-label">A BROAD MARKET SIGNAL</div><h2>Start in the U.S.<br/><em>Test the real need.</em></h2></div><div className="context-copy"><p>The venture report uses U.S. GDP per capita as broad economic context. Its 2016–2025 current-dollar trend rose by an estimated $3,728 per year, but it does not measure household budgets or demand for a folding machine.</p><p>Next, test time saved, space concerns, reliability, and willingness to pay with the households FoldMate is designed for.</p><a href="https://databank.worldbank.org/reports.aspx?country=USA&series=NY.GDP.PCAP.CD&source=2" target="_blank" rel="noreferrer" className="text-link">World Bank data source <span>↗</span></a></div></div></section>
+
+    <section className="diagnosis"><div className="wrap diagnosis-inner"><div className="section-label">05 / THE LAUNCH STORY</div><h2>Less folding.<br/><em>More room in the day.</em></h2><div className="diagnosis-points"><p><b>THE PROBLEM</b>Clean laundry can wait because folding takes time, energy, and repetition.</p><p><b>THE PRODUCT</b>FoldMate is a home appliance concept that would identify and fold everyday clothes into a ready-to-put-away tray.</p><p><b>THE PROOF TO EARN</b>Show real folds, real time saved, a manageable footprint, and a price households say is worth it.</p></div><div className="source-links"><span>CONSUMER CONTEXT</span><a href="https://www.reddit.com/r/laundry/comments/1cql5m3/folding_machine_anyone/" target="_blank" rel="noreferrer">Reddit · Folding Machine Anyone?</a><a href="https://www.reddit.com/r/laundry/comments/1jbe13i/is_there_a_decent_laundry_solution_that_doesnt/" target="_blank" rel="noreferrer">Reddit · Alternatives to folding</a></div></div></section>
+
+    <footer className="footer wrap"><div className="footer-top"><a className="wordmark foldmate-wordmark" href="#top"><span className="foldmate-icon">F</span><span>FOLDMATE</span></a><p>Fold less. Get a little more of your day back.</p><a className="button button-dark" href="#product">Explore the concept <span>↑</span></a></div><div className="footer-bottom"><span>HOME CLOTHES-FOLDING MACHINE · VENTURE PROJECT</span><span>EARLY CONCEPT · PRICE TO BE VALIDATED</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+  </main>;
 }
